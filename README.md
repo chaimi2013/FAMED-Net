@@ -1,7 +1,7 @@
 # FAMED-Net
 FAMED-Net: A Fast and Accurate Multi-scale End-to-end Dehazing Network
 
-The code willl be coming soon.
+The code will be coming soon.
 
 ## Citation
 Please cite our paper in your publications if it helps your research:
