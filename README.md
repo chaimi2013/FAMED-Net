@@ -1,15 +1,49 @@
 # FAMED-Net
 FAMED-Net: A Fast and Accurate Multi-scale End-to-end Dehazing Network
+The code has been tested on Ubuntu 14.04 with CUDA 8.0.
 
 The code will be coming soon.
+## Installation
+    install caffe master and compile matlab interface. If you use Ubuntu 16.04, please modify Makefile and Makefile.config. 
 
+## Folder Structure
+    caffe-master-FAMED-Net
+        The caffe source code
+    FAMDED-Net
+        -fast-guided-filter
+            fast guided filter code [2]
+        -generateData
+    	    Generating HDF5 training files
+	    -model
+		    Folder containing dehazed models of AOD-Net, FPC-Net, and FAMED-Net
+	    -results
+		    Folder containing dehazed results
+        -stats
+            Codes and data for generating the learned statistical priors of different models
+	    -testImgs
+            Test hazy images
+        -utils
+            PSNR, SSIM (from [3]), and store2hdf5 functions
+        -testDemoObjectiveEval_ForTestSet_FastGF
+            Main script for objective evaluation on RESIDE SOTS test set
+        -testDemoSubjectiveEval_ForImgs_FastGF
+            Main script for subjective evaluation on single hazy test image
+
+## Reference: 
+
+    [1]. Zhang J, Tao D. FAMED-Net: A Fast and Accurate Multi-scale End-to-end Dehazing Network[J]. arXiv preprint arXiv:1906.04334, 2019.
+    
+    [2]. Fast guided filter, [Kaiming He](http://kaiminghe.com/eccv10/index.html)
+    
+    [3]. A Benchmark for Single Image Dehazing, [RESIDE](https://sites.google.com/view/reside-dehaze-datasets)
+            
 ## Citation
 Please cite our paper in your publications if it helps your research:
 
-    @inproceedings{zhang2019famednet,
+    @article{zhang2019famednet,
       title={FAMED-Net: A Fast and Accurate Multi-scale End-to-end Dehazing Network},
       author={Zhang, Jing and Tao, Dacheng},
-      booktitle={IEEE Transactions on Image Processing},
+      journal={arXiv preprint arXiv:1906.04334},
       year={2019}
     }
 
