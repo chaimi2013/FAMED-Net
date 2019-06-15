@@ -11,7 +11,7 @@ The code has been tested on Ubuntu 14.04 with CUDA 8.0.
         The caffe source code
     FAMDED-Net
         -fast-guided-filter
-            Fast guided filter code [1]
+	    Fast guided filter code [1]
         -generateData
 	    Generating HDF5 training files
 	-model
