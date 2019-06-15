@@ -4,7 +4,9 @@
 The code has been tested on Ubuntu 14.04 with CUDA 8.0.
 
 ## Installation
-    Install caffe master and compile matlab interface. If you use Ubuntu 16.04, please modify Makefile and Makefile.config. 
+    Install caffe master and compile matlab interface. 
+    
+    If you use Ubuntu 16.04, please modify Makefile and Makefile.config. 
 
 ## Folder Structure
     caffe-master-FAMED-Net
