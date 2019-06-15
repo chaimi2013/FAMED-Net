@@ -2,16 +2,15 @@
 FAMED-Net: A Fast and Accurate Multi-scale End-to-end Dehazing Network
 The code has been tested on Ubuntu 14.04 with CUDA 8.0.
 
-The code will be coming soon.
 ## Installation
-    install caffe master and compile matlab interface. If you use Ubuntu 16.04, please modify Makefile and Makefile.config. 
+    Install caffe master and compile matlab interface. If you use Ubuntu 16.04, please modify Makefile and Makefile.config. 
 
 ## Folder Structure
     caffe-master-FAMED-Net
         The caffe source code
     FAMDED-Net
         -fast-guided-filter
-            fast guided filter code [2]
+            Fast guided filter code [2]
         -generateData
     	    Generating HDF5 training files
 	    -model
