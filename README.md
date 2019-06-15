@@ -1,5 +1,6 @@
 # FAMED-Net
-FAMED-Net: A Fast and Accurate Multi-scale End-to-end Dehazing Network
+[FAMED-Net: A Fast and Accurate Multi-scale End-to-end Dehazing Network.](https://chaimi2013.github.io/Research/FAMED-Net/)
+
 The code has been tested on Ubuntu 14.04 with CUDA 8.0.
 
 ## Installation
