@@ -11,8 +11,8 @@ The code has been tested on Ubuntu 14.04 with CUDA 8.0.
     caffe-master-FAMED-Net
         The caffe source code
     FAMDED-Net
-    	-fast-guided-filter
-		Fast guided filter code [1]
+        -fast-guided-filter
+	    Fast guided filter code [1]
 	-generateData
 		Generating HDF5 training files
 	-model
