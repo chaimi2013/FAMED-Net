@@ -10,23 +10,23 @@ The code has been tested on Ubuntu 14.04 with CUDA 8.0.
     caffe-master-FAMED-Net
         The caffe source code
     FAMDED-Net
-        -fast-guided-filter
+    	-fast-guided-filter
 		Fast guided filter code [1]
-        -generateData
+	-generateData
 		Generating HDF5 training files
 	-model
 		Folder containing dehazed models of AOD-Net, FPC-Net, and FAMED-Net
 	-results
 		Folder containing dehazed results
-        -stats
+	-stats
 		Codes and data for generating the learned statistical priors of different models
 	-testImgs
 		Test hazy images
-        -utils
+	-utils
 		PSNR, SSIM (from [2]), and store2hdf5 functions
-        -testDemoObjectiveEval_ForTestSet_FastGF
+	-testDemoObjectiveEval_ForTestSet_FastGF
 		Main script for objective evaluation on RESIDE SOTS test set
-        -testDemoSubjectiveEval_ForImgs_FastGF
+	-testDemoSubjectiveEval_ForImgs_FastGF
 		Main script for subjective evaluation on single hazy test image
 
 ## Reference: 
