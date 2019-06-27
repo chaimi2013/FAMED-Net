@@ -31,7 +31,7 @@ The code has been tested on Ubuntu 14.04 with CUDA 8.0.
         -testDemoSubjectiveEval_ForImgs_FastGF
             Main script for subjective evaluation on single hazy test image
 
-## Reference: 
+## Reference
     [1]. Fast guided filter, [Kaiming He](http://kaiminghe.com/eccv10/index.html)
     
     [2]. A Benchmark for Single Image Dehazing, [RESIDE](https://sites.google.com/view/reside-dehaze-datasets)
