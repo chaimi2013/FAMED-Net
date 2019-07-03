@@ -39,11 +39,17 @@ The code has been tested on Ubuntu 14.04 with CUDA 8.0.
 ## Citation
 Please cite our paper in your publications if it helps your research:
 
-    @article{zhang2019famednet,
-      title={FAMED-Net: A Fast and Accurate Multi-scale End-to-end Dehazing Network},
-      author={Zhang, Jing and Tao, Dacheng},
-      journal={arXiv preprint arXiv:1906.04334},
-      year={2019}
+    @article{zhang2019famednet, 
+        author={Zhang, Jing and Tao, Dacheng}, 
+        journal={IEEE Transactions on Image Processing}, 
+        title={FAMED-Net: A Fast and Accurate Multi-scale End-to-end Dehazing Network}, 
+        year={2019}, 
+        volume={}, 
+        number={}, 
+        pages={1-1}, 
+        doi={10.1109/TIP.2019.2922837}, 
+        ISSN={1057-7149}, 
+        month={}
     }
 
 ## Contact
