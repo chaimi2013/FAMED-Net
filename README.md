@@ -34,11 +34,11 @@ Download the AOD-Net model and FPC-Net model from [AOD-Net](https://github.com/B
             Main script for subjective evaluation on single hazy test image
 
 ## Reference
-[1]. Fast guided filter, [Kaiming He](http://kaiminghe.com/eccv10/index.html)
+[1]. Fast guided filter, [FGF](http://kaiminghe.com/eccv10/index.html)
 
 [2]. A Benchmark for Single Image Dehazing, [RESIDE](https://sites.google.com/view/reside-dehaze-datasets)
 
-[2]. Fully Point-wise Convolutional Neural Network for Modeling Statistical Regularities in Natural Images, [FPC-Net](https://github.com/chaimi2013/FPCNet)
+[3]. Fully Point-wise Convolutional Neural Network for Modeling Statistical Regularities in Natural Images, [FPC-Net](https://github.com/chaimi2013/FPCNet)
             
 ## Citation
 Please cite our paper in your publications if it helps your research:
