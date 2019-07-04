@@ -19,7 +19,7 @@ Download the AOD-Net model and FPC-Net model from [AOD-Net](https://github.com/B
         -generateData
             Generating HDF5 training files
         -model
-            Folder containing dehazed models of AOD-Net, FPC-Net, and FAMED-Net
+            Folder containing dehazed models of AOD-Net [2], FPC-Net [3], and FAMED-Net
         -results
             Folder containing dehazed results
         -stats
