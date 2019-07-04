@@ -4,11 +4,11 @@
 The code has been tested on Ubuntu 14.04 with CUDA 8.0.
 
 ## Installation
-    Install the caffe-master-FAMED-Net and compile the Matlab interface. 
-    
-    If you use Ubuntu 16.04, please modify Makefile and Makefile.config. 
-    
-    Download the AOD-Net model and FPC-Net model from [AOD-Net](https://github.com/Boyiliee/AOD-Net) and [FPC-Net](https://github.com/chaimi2013/FPCNet), rename them as "AOD_Net.caffemodel" and "FPC-Net.caffemodel", and put them into the "model" folder.
+Install the caffe-master-FAMED-Net and compile the Matlab interface. 
+
+If you use Ubuntu 16.04, please modify Makefile and Makefile.config. 
+
+Download the AOD-Net model and FPC-Net model from [AOD-Net](https://github.com/Boyiliee/AOD-Net) and [FPC-Net](https://github.com/chaimi2013/FPCNet), rename them as "AOD_Net.caffemodel" and "FPC-Net.caffemodel", and put them into the "model" folder.
 
 ## Folder Structure
     caffe-master-FAMED-Net
