@@ -1,0 +1,148 @@
+name: "DehazeNet"
+
+input: "data"
+input_dim: 1	
+input_dim: 3
+input_dim: 360 #resize
+input_dim: 360 #resize
+
+
+#------------------base network----------
+layer {
+  name: "conv1"
+  type: "Convolution"
+  bottom: "data"
+  top: "conv1"
+  param { lr_mult: 1.0 decay_mult: 1.0 }
+  param { lr_mult: 2.0 decay_mult: 0 }
+  convolution_param {
+    num_output: 16
+    kernel_size: 1
+    stride: 1
+    weight_filler {
+	  type: "msra"
+	  variance_norm: FAN_IN
+	}
+  }
+}
+
+
+layer {
+    name: "reshape1"
+    type: "Reshape"
+    bottom: "conv1"
+    top: "reshape1"
+    reshape_param {
+      shape {
+        dim: 0
+        dim: 1
+        dim: 16
+        dim: -1
+      }
+    }
+  }
+
+layer {
+  name: "pool1"
+  type: "Pooling"
+  bottom: "reshape1"
+  top: "pool1"
+  pooling_param {
+    pool: MAX
+    kernel_w: 1
+    kernel_h: 4
+    stride_w: 1
+    stride_h: 4
+  }
+}
+
+layer {
+ name: "reshape2"
+ type: "Reshape"
+ bottom: "pool1"
+ top: "reshape2"
+ reshape_param {
+    shape {
+      dim: 0
+      dim: 4
+      dim: 360 #resize
+      dim: 360 #resize
+    }
+  }
+}
+
+layer {
+  name: "pool1/1x1Max"
+  type: "Pooling"
+  bottom: "reshape2"
+  top: "pool1/1x1Max"
+  pooling_param {
+    pool: MAX
+    kernel_size: 2
+    stride: 2
+  }
+}
+
+
+#-----------------------multi-scale---------------
+layer {
+  name: "conv2/1x1"
+  type: "Convolution"
+  bottom: "pool1/1x1Max"
+  top: "conv2/1x1"
+  param { lr_mult: 1.0 decay_mult: 1.0 }
+  param { lr_mult: 2.0 decay_mult: 0 }
+  convolution_param {
+    num_output: 48
+    kernel_size: 1
+    stride: 1
+    pad: 0
+    weight_filler {
+	  type: "msra"
+	  variance_norm: FAN_IN
+	}
+  }
+}
+
+layer {
+  name: "pool2/1x1"
+  type: "Pooling"
+  bottom: "conv2/1x1"
+  top: "pool2/1x1"
+  pooling_param {
+    pool: MAX
+    kernel_size: 8
+    stride: 1
+  }
+}
+
+
+#----------------prediction---------------
+layer {
+  name: "conv3/1x1"
+  type: "Convolution"
+  bottom: "pool2/1x1"
+  top: "conv3/1x1"
+  param { lr_mult: 1.0 decay_mult: 1.0 }
+  param { lr_mult: 2.0 decay_mult: 0 }
+  convolution_param {
+    num_output: 1
+    kernel_size: 1
+    stride: 1
+    weight_filler {
+	  type: "msra"
+	  variance_norm: FAN_IN
+	}
+  }
+}
+
+layer {
+  name: "brelu"
+  type: "BReLU"
+  bottom: "conv3/1x1"
+  top: "conv3/1x1"
+  brelu_param {
+    minval: 0
+    maxval: 1
+  }
+}
