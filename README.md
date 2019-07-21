@@ -56,5 +56,16 @@ Please cite our paper in your publications if it helps your research:
         month={}
     }
 
+## Related Work
+[1]. Fully Point-wise Convolutional Neural Network for Modeling Statistical Regularities in Natural Images. [FPC-Net: Project, ](https://chaimi2013.github.io/Research/FPC/index.html)
+    [FPC-Net: github](https://github.com/chaimi2013/FPCNet)
+    
+    @inproceedings{zhang2018fpcnet,
+      title={Fully Point-wise Convolutional Neural Network for Modeling Statistical Regularities in Natural Images},
+      author={Zhang, Jing and Cao, Yang and Wang, Yang and Wen, Chenglin and Chen, Chang Wen},
+      booktitle={ACM Multimedia Conference},
+      year={2018}
+    }
+
 ## Contact
 [Email](zj.winner@163.com)
